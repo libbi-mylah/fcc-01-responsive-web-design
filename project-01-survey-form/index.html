@@ -1,0 +1,179 @@
+<html lang="en" >
+
+<head>
+   <meta charset="UTF-8">
+    <title>BTS Stan Site Survey Form</title>
+ <script>
+  window.console = window.console || function(t) {};
+</script>
+
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+
+<body translate="no" >
+  <div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">BTS Stan Site Survey Form</h1>
+    <p id="description" class="description text-center">
+      Please let us know what else we can do for you!
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Who is your favorite member?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select who you stan most</option>
+        <option value="J-Hope">J-Hope</option>
+        <option value="RM">RM</option>
+        <option value="Jin">Jin</option>
+        <option value="Jungkook">Jungkook</option>
+        <option value"V">V</option>
+        <option value="Jimin">Jimin</option>
+        <option value="Suga">Suga</option>
+        <option value="Don't make me choose!">Don't make me choose!</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend our website to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="of course"
+          type="radio"
+          class="input-radio"
+          checked
+          />Of Course!</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+          checked
+          />Maybe...</label>
+      <label>
+        <input
+          name="user-recommend"
+          value="no thank youe"
+          type="radio"
+          class="input-radio"
+          checked
+          />No Thank You</label>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What do you love most about our website?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="photos">Photos</option>
+        <option value="member information">Member Information</option>
+        <option value="products">Products</option>
+        <option value="community">Community</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What would you like to see more of?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label>
+        <input
+          name="prefer"
+          value="upcoming events"
+          type="checkbox"
+          class="input-checkbox"
+        />Upcoming Events</label>
+      <label>
+        <input
+          name="prefer"
+          value="more photos"
+          type="checkbox"
+          class="input-checkbox"
+        />More Photos</label>
+      <label>
+        <input
+          name="prefer"
+          value="more porducts"
+          type="checkbox"
+          class="input-checkbox"
+        />More Products</label>
+      <label>
+        <input
+          name="prefer"
+          value="videos"
+          type="checkbox"
+          class="input-checkbox"
+        />Videos</label>
+      <label>
+        <input
+          name="prefer"
+          value="downloadable content"
+          type="checkbox"
+          class="input-checkbox"
+        />Downloadable Content</label>
+    </div>
+
+    <div class="form-group">
+      <p>Pleave leave any additional comments or feedback here:</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
