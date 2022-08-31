@@ -1,0 +1,117 @@
+* {
+    font-family: 'georgia';
+    color: #FFF;
+    letter-spacing: 2px;
+    font-weight: 600px;
+    word-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #title, #title-info, #img-caption, #a-link, #second-header {
+    text-align: center;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    background: #B39BC8;
+    border-color: #A1C3D1;
+    border-style: solid;
+    border-width: 2px;
+    margin: 25px auto;
+    border-radius: 20px;
+  }
+  #title {
+    font-size: 2.5em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+  }
+  #title-info {
+    font-size: 1.3em;
+    font-style: italic;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+  #img-div {
+    background: hsl (198deg , 34% , 73%);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  #image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-color: #A1C3D1;
+    border-width: 10px;
+    border-style: double;
+    border-radius: 5px;
+  }
+  #img-caption {
+    padding-top: 5px;
+    padding-bottom: -4px;
+  }
+  #tribute-info {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+  }
+  ul {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    text-align: justify;
+  }
+  li{
+    font-family: 'verdana';
+    line-height: 50px;
+    font-weight: 100;
+  }
+  #second-header {
+    margin-top: 20px;
+  }
+  #line {
+    width: 30%;
+    height: 3px;
+    background-color: #A1C3D1;
+    border: 1px solid;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 30px;  
+  }
+  #a-link { 
+    text-align:center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  a {
+    font-style: italic;
+    color: #F4C2C2;
+  }
+  a:hover {
+    color: #301934;
+  }
+  
+  @media all and (max-width: 600px) {
+    #img-div {
+      padding: 4px;
+    }
+    #tribute-info{
+      width: 80%;
+    }
+    #title {
+      font-size: 2em;
+    }
+  }
+  @media all and (max-width: 320px){
+    * {
+      word-spacing: none;
+      letter-spacing: none;
+    }
+}
